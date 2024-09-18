@@ -5,8 +5,6 @@ from phonenumbers.phonenumberutil import NumberParseException
 import requests
 from datetime import datetime
 import pytz
-from playsound import playsound
-import pygame
 
 OPEN_CAGE_API_KEY = '{Add your own my guy}'
 
@@ -168,9 +166,6 @@ label = Label(window,
 
 
 window.after(500, lambda: label.place(relx=0.5, rely=0.5, anchor='center'))
-pygame.mixer.init()
-pygame.mixer.music.load("/Users/seanwoods/Sparrow/ClipTrack/Start_Up.mp3")
-pygame.mixer.music.play()
 
 window.after(2000, update_screen)
 
